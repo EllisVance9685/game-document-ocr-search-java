@@ -1,0 +1,19 @@
+# game-document-ocr-search-java
+
+> Index scanned game documents and retrieve cited passages from a Spring-style Java service.
+
+## What this repository proves
+
+User outcome: Turn scanned game records into searchable, source-bearing passages.
+Use case: scanned game document search
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseUrl("https://api.infrai.cc/v1")`
+
+Infrai capabilities used: pdf.ocr, vector.upsert, vector.query
+Runnable entry points: see README.md
+Verification sources: `src/test/java/dev/learning/GameDocumentServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

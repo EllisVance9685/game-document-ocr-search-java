@@ -1,0 +1,5 @@
+server:
+  port: 8080
+learning:
+  collection: ${GAME_DOC_COLLECTION:game-documents}
+  embedding-model: ${EMBEDDING_MODEL:text-embedding-3-small}
